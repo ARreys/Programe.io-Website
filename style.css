@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Maven+Pro&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: #7b00ff
+}
+
+
+/* Transform */
+
+.skew {
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), white); */
+    background: white;
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+    min-height: 100vh;
+}
+
+.positive {
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    transform: skew(10deg);
+}
+
+.negative {
+    -webkit-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+
+/*------------*/
+
+#particles-js {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: black;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+}
+
+.navbar {
+    font-size: 1.5rem;
+    background: rgb(255, 255, 255, 0);
+    transition: 1.5s;
+}
+
+.scrolled {
+    background: #262626;
+    border-bottom: transparent !important;
+    transition: 1.5s;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    color: #00C3C9 !important;
+    font-weight: bold;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    color: #00C3C9 !important;
+    transition: 0.8s;
+}
+
+.nav-item:hover {
+    color: #F8E063 !important;
+}
+
+.container-principal {
+    z-index: 1;
+}
+
+.phrase {
+    height: 150px;
+    width: 300px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    background-color: white;
+}
+
+.image {
+    z-index: 1 !important;
+    float: right;
+}
+
+.container-cards {
+    background-image: linear-gradient(to right, rgb(177, 75, 255), #00C3C9);
+}
+
+.card {
+    background-color: #262626;
+    margin: 20px 0px;
+    border: 2px solid #7b00ff;
+    color: white;
+    border-radius: 15px;
+    transition: .5s;
+    outline: none;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px #7b00ff;
+}
+
+.btn {
+    background-color: #00C3C9 !important;
+}
+
+.footer {
+    background-color: #262626;
+    color: white
+}
+
+.midia-socialdev ul {
+    margin: 0 auto;
+    padding: 0;
+    display: inline;
+}
+
+.midia-socialdev ul li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.midia-socialdev ul li svg {
+    color: white;
+    border-radius: 7px;
+}
+
+.social-mediadev-telegram {
+    width: 34px;
+    transition: .5s;
+}
+
+.social-mediadev-telegram:hover {
+    box-shadow: 0 0 10px #0088cc;
+}
+
+.social-mediadev-facebook {
+    width: 34px;
+    transition: .5s;
+}
+
+.social-mediadev-facebook:hover {
+    box-shadow: 0 0 10px #4267B2;
+}
+
+.social-mediadev-instagram {
+    width: 34px;
+    transition: .5s;
+}
+
+.social-mediadev-instagram:hover {
+    box-shadow: 0 0 10px #bc2a8d;
+}
+
+.social-mediadev-website {
+    width: 34px;
+    transition: .5s;
+}
+
+.social-mediadev-website:hover {
+    box-shadow: 0 0 10px #8900f2;
+}
+
+.fa-telegram-plane {
+    color: #0088cc;
+}
+
+.fa-facebook {
+    color: #4267B2;
+}
+
+.fa-instagram {
+    color: #bc2a8d;
+}
+
+.fa-code {
+    color: #8900f2;
+}
+
+.social-mediadev-github {
+    transition: .5s;
+}
+
+.social-mediadev-github:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.row-socialMidia {
+    background-color: #262626;
+}
+
+@media (max-width: 574px) {
+    #particles-js {
+        height: 90%;
+    }
+    .col-text {
+        position: absolute;
+        z-index: 1;
+    }
+    .phrase {
+        margin-top: 20%;
+    }
+    .image {
+        margin-top: 15%;
+        z-index: 0 !important;
+        float: right;
+    }
+}
